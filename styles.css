@@ -93,9 +93,9 @@ body {
 
 .title-o-btn {
   display: inline-block;
-  vertical-align: baseline;
-  width: 1.05ex;
-  height: 1.05ex;
+  vertical-align: -0.04em;
+  width: 0.72em;
+  height: 0.72em;
   margin: 0 0 0 0.02em;
   padding: 0;
   border: none;
