@@ -79,24 +79,30 @@ body {
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.1;
+  white-space: nowrap;
 }
 
 .title-accent {
   color: var(--accent);
 }
 
+.title-tail {
+  display: inline;
+  color: var(--text);
+}
+
 .title-o-btn {
   display: inline-block;
-  vertical-align: baseline;
-  width: 0.62em;
-  height: 0.92em;
-  margin: 0;
+  vertical-align: -0.06em;
+  width: 0.85em;
+  height: 1.12em;
+  margin: 0 0 0 -0.02em;
   padding: 0;
   border: none;
   background: transparent;
   color: inherit;
   font: inherit;
-  line-height: 1;
+  line-height: 0;
   cursor: pointer;
   transition: color 0.2s ease, transform 0.15s ease;
 }
