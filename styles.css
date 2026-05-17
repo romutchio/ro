@@ -88,7 +88,8 @@ body {
 
 .title-tail {
   display: inline-flex;
-  align-items: baseline;
+  align-items: flex-end;
+  vertical-align: baseline;
   color: var(--text);
 }
 
@@ -97,11 +98,10 @@ body {
 }
 
 .title-o-btn {
-  position: relative;
   flex-shrink: 0;
-  width: 0.56em;
-  height: 0.56em;
-  margin: 0 0 0 -0.02em;
+  width: 0.62em;
+  height: 0.62em;
+  margin: 0 0 0 -0.03em;
   padding: 0;
   border: none;
   background: transparent;
