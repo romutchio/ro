@@ -87,29 +87,29 @@ body {
 }
 
 .title-tail {
-  display: inline;
+  display: inline-flex;
+  align-items: baseline;
   color: var(--text);
+}
+
+.title-i {
+  line-height: 1;
 }
 
 .title-o-btn {
   position: relative;
-  display: inline-block;
-  vertical-align: baseline;
-  margin: 0 0 0 0.01em;
+  flex-shrink: 0;
+  width: 0.56em;
+  height: 0.56em;
+  margin: 0 0 0 -0.02em;
   padding: 0;
   border: none;
   background: transparent;
   color: inherit;
   font: inherit;
-  line-height: 1;
+  line-height: 0;
   cursor: pointer;
   transition: color 0.2s ease, transform 0.15s ease;
-}
-
-.title-o-sizing {
-  visibility: hidden;
-  display: block;
-  line-height: 1;
 }
 
 .title-o-btn:hover {
@@ -124,8 +124,6 @@ body {
 }
 
 .title-o-svg {
-  position: absolute;
-  inset: 0;
   display: block;
   width: 100%;
   height: 100%;
