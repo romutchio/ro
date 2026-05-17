@@ -58,10 +58,27 @@ body {
   position: relative;
   width: 160px;
   height: 160px;
+  border: none;
   border-radius: 50%;
   padding: 3px;
   background: linear-gradient(135deg, var(--accent), #00c97f);
   box-shadow: 0 0 32px var(--accent-glow);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.avatar-wrap:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 40px var(--accent-glow);
+}
+
+.avatar-wrap.is-playing {
+  box-shadow: 0 0 48px var(--accent-glow);
+}
+
+.avatar-wrap:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
 }
 
 .avatar {
@@ -87,58 +104,7 @@ body {
 }
 
 .title-tail {
-  display: inline-flex;
-  align-items: flex-end;
-  vertical-align: baseline;
   color: var(--text);
-}
-
-.title-i {
-  line-height: 1;
-}
-
-.title-o-btn {
-  flex-shrink: 0;
-  width: 0.62em;
-  height: 0.62em;
-  margin: 0 0 0 -0.03em;
-  padding: 0;
-  border: none;
-  background: transparent;
-  color: inherit;
-  font: inherit;
-  line-height: 0;
-  cursor: pointer;
-  transition: color 0.2s ease, transform 0.15s ease;
-}
-
-.title-o-btn:hover {
-  color: var(--accent);
-  transform: scale(1.05);
-}
-
-.title-o-btn:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 4px;
-  border-radius: 50%;
-}
-
-.title-o-svg {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.title-o-pause {
-  display: none;
-}
-
-.title-o-btn.is-playing .title-o-play {
-  display: none;
-}
-
-.title-o-btn.is-playing .title-o-pause {
-  display: block;
 }
 
 /* Links */

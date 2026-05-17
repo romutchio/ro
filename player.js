@@ -1,16 +1,25 @@
 const audio = document.getElementById("audio");
-const playBtn = document.getElementById("playBtn");
+const avatarBtn = document.getElementById("avatarBtn");
 
 function setPlaying(playing) {
-  playBtn.classList.toggle("is-playing", playing);
-  playBtn.setAttribute("aria-label", playing ? "Пауза" : "Воспроизвести");
+  avatarBtn.classList.toggle("is-playing", playing);
+  avatarBtn.setAttribute("aria-label", playing ? "Пауза" : "Воспроизвести музыку");
 }
 
-playBtn.addEventListener("click", () => {
+function togglePlayback() {
   if (audio.paused) {
     audio.play();
   } else {
     audio.pause();
+  }
+}
+
+avatarBtn.addEventListener("click", togglePlayback);
+
+avatarBtn.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    togglePlayback();
   }
 });
 
