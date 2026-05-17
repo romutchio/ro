@@ -28,6 +28,38 @@
       </h1>
     </section>
 
+    <section class="player" aria-label="Плеер">
+      <audio id="audio" src="assets/moneyball.mp3" preload="metadata"></audio>
+      <button type="button" class="player-btn" id="playBtn" aria-label="Воспроизвести">
+        <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+        <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M6 5h4v14H6zm8 0h4v14h-4z"/>
+        </svg>
+      </button>
+      <div class="player-body">
+        <p class="player-label">Сейчас играет</p>
+        <p class="player-title">Moneyball</p>
+        <div class="player-track">
+          <input
+            type="range"
+            class="player-progress"
+            id="progress"
+            value="0"
+            min="0"
+            max="100"
+            step="0.1"
+            aria-label="Прогресс воспроизведения"
+          >
+          <div class="player-times">
+            <span id="currentTime">0:00</span>
+            <span id="duration">0:00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="links" aria-label="Ссылки">
       <a class="link-card" href="https://mutchio.ru/info/romutchio" target="_blank" rel="noopener noreferrer">
         <span class="link-icon" aria-hidden="true">
@@ -103,5 +135,6 @@
       <p>© 2026 romutchio</p>
     </footer>
   </main>
+  <script src="player.js"></script>
 </body>
 </html>
