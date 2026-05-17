@@ -93,10 +93,10 @@ body {
 
 .title-o-btn {
   display: inline-block;
-  vertical-align: -0.22em;
-  width: 0.85em;
-  height: 1.12em;
-  margin: 0 0 0 -0.02em;
+  vertical-align: baseline;
+  width: 1.05ex;
+  height: 1.05ex;
+  margin: 0 0 0 0.02em;
   padding: 0;
   border: none;
   background: transparent;
